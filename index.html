@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <header class="flex justify-between items-center">
+        <h1><a href="./"><img src="./assets/img/logo.svg" alt=""><span class="blind">enmedia</span></a></h1>
+        <nav>
+            <ul class="flex">
+                <li><a href="javascipt:void(0)">HOME</a></li>
+                <li><a href="javascipt:void(0)">ABOUT</a></li>
+                <li><a href="javascipt:void(0)">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-banner">
+            <div class="banner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/main.jpg" alt="메인배너">
+                        <div class="text">
+                            <b class="font-weight-900">
+                                Lorem ipsum <br />
+                                dolor sit amet,
+                            </b>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, consectetur <br />
+                                sed do eiusmod tempor incididunt ut<br />
+                                labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/main.jpg" alt="메인배너">
+                        <div class="text">
+                            <b class="font-weight-900">
+                                Lorem ipsum <br />
+                                dolor sit amet,
+                            </b>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, consectetur <br />
+                                sed do eiusmod tempor incididunt ut<br />
+                                labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="main-py">
+            <div class="inner">
+                <ul class="main-card grid gap-[21px] grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+                    <li v-for="item in items" :key="item">
+                        <div class="img" style="background-image:url('./assets/img/img1.jpg')"></div>
+                        <div class="text">
+                            <h2>
+                                Lorem ipsum <br />
+                                dolor sit amet,
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, <br />
+                                consectetur adipiscing elit,
+                            </p>
+                            <p class="text-btm">Lorem ipsum dolor sit amet,</p>
+                        </div>
+                    </li>
+                    <li v-for="item in items" :key="item">
+                        <div class="img" style="background-image:url('./assets/img/img2.jpg')"></div>
+                        <div class="text">
+                            <h2>
+                                Lorem ipsum <br />
+                                dolor sit amet,
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, <br />
+                                consectetur adipiscing elit,
+                            </p>
+                            <p class="text-btm">Lorem ipsum dolor sit amet,</p>
+                        </div>
+                    </li>
+                    <li v-for="item in items" :key="item">
+                        <div class="img" style="background-image:url('./assets/img/img3.jpg')"></div>
+                        <div class="text">
+                            <h2>
+                                Lorem ipsum <br />
+                                dolor sit amet,
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, <br />
+                                consectetur adipiscing elit,
+                            </p>
+                            <p class="text-btm">Lorem ipsum dolor sit amet,</p>
+                        </div>
+                    </li>
+                    <li v-for="item in items" :key="item">
+                        <div class="img" style="background-image:url('./assets/img/img4.jpg')"></div>
+                        <div class="text">
+                            <h2>
+                                Lorem ipsum <br />
+                                dolor sit amet,
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, <br />
+                                consectetur adipiscing elit,
+                            </p>
+                            <p class="text-btm">Lorem ipsum dolor sit amet,</p>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="section-custom main-py">
+            <div class="inner">
+                <div class="gallery-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/img1.jpg" alt="풀">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/img2.jpg" alt="꽃">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/img3.jpg" alt="숲숲">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/img4.jpg" alt="하늘">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black-900">
+        <div class="inner">
+            <div class="logo">
+                <a href="./"><img src="./assets/img/logo_footer.png" alt=""><span class="blind">enmedia</span></a>
+            </div>
+            <p class="copyright text-white">Copyrights 2024. <b>테스트</b> All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

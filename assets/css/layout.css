@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@import './reset.css';
+@import './common.css';
+
+header {position: fixed; z-index: 9999; top: 0; width: 100%; padding: 10px 6.25%; background: #fff;}
+header h1 a {display: block; width: 136px;}
+header nav {font-weight: 700;}
+header nav > ul {gap: 45px;}
+header nav > ul a {font-size: 20px;}
+
+footer {padding: 115px 0 120px; color: #f5f5f5;}
+footer .copyright {padding-top: 18px; font-weight: 200; font-size: 21px;}
+
+@media all and (max-width: 810px){
+    header {padding-left: 10px; padding-right: 10px;}
+    header nav {font-weight: 600;}
+    header nav > ul {gap: 10px;}
+    header nav > ul a {font-size: 15px;}
+
+    footer {padding: 60px 0;}
+    footer .logo a {width: 170px;}
+    footer .copyright {font-size: 14px;}
+}
+
