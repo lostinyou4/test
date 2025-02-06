@@ -28,21 +28,6 @@ module.exports = {
         '800': '800',  
         '900': '900',  
       },
-      keyframes: {
-        'fade-in-scale': {
-          '0%': {
-            opacity: '0',
-            transform: 'scale(0.95)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'scale(1)',
-          },
-        },
-      },
-      animation: {
-        'fade-in-scale': 'fade-in-scale 0.3s ease-out',
-      },
     },
   },
   plugins: [],

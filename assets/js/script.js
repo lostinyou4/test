@@ -1,5 +1,11 @@
 var swiper = new Swiper(".banner-swiper", {
-    navigation: {
+    autoplay : {  
+        delay : 5000, 
+        disableOnInteraction : false,  
+      },
+    loop : true,
+    loopAdditionalSlides : 1,
+        navigation: {
       nextEl: ".banner-swiper .swiper-button-next",
       prevEl: ".banner-swiper .swiper-button-prev",
     },

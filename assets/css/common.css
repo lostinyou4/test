@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.box-shadow {@apply rounded-sm shadow-sm;}
-.fade-in-scale{@apply animate-fade-in-scale;}
-
 @font-face {
     font-family: 'Pretendard';
     font-style: normal;
@@ -99,14 +96,12 @@ body{
     clip: rect(0,0,0,0);
 
 }
-.mo-show {display: none;}
 
 @media all and (min-width:811px){
     
 }
 @media all and (max-width: 810px){
-    .pc-show{display: none;}
-    .mo-show{display: block;}
+
 }
 @media all and (max-width: 375px){
 
